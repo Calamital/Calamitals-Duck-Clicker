@@ -28,7 +28,7 @@ hr {
 
 .end-button {
   position: absolute;
-  top: 30px;
+  top: 25px;
 }
 
 h3 {
@@ -106,7 +106,7 @@ button:hover {
 h6 {
   font-weight: normal;
   position: absolute;
-  top: -20px;
+  top: -30px;
 }
 
 .autohead {
