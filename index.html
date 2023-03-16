@@ -1,0 +1,121 @@
+<header>
+  <link rel="stylesheet" href="style.css">
+</header>
+
+<body>
+  <h6>
+    *DpC: Ducks per click<br>*DpS: Ducks per second
+  </h6>
+  <button class="end-button" onclick="end();">
+    Restart Game
+  </button>
+  <h3>
+    Calamital's Duck Clicker
+  </h3>
+  <div class="hr2">
+    <hr>
+  </div>
+  <p id="clickcount"></p>
+  <div class="click-button">
+    <button type="button" onClick="clicks+=amount;updateClickCount();" id="push">
+      <img src="https://tr.rbxcdn.com/98a3cce71aa355750a8a00c4f3b90fd7/420/420/Decal/Png" />
+    </button>
+  </div>
+  <div class="hr1">
+    <hr>
+  </div>
+  <div class="buttons">
+    <div class="Click-Buttons">
+      <div class="boost-buttons">
+        <div class="clickhead">
+          <h4>
+            Pet Boosts
+          </h4>
+        </div>
+        <ul>
+          <li>
+            <div id="boost-click-button-1" class="boostclick-1">
+              <button type="button" onClick="increaseAmount1();" id="boost-1">
+                DpC +1 | cost: 5 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-click-button-2" class="boostclick-2">
+              <button type="button" onClick="increaseAmount2();" id="boost-2">
+                DpC +5 | cost: 25 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-click-button-3" class="boostclick-3">
+              <button type="button" onClick="increaseAmount3();" id="boost-3">
+                DpC +25 | cost: 150 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-click-button-4" class="boostclick-4">
+              <button type="button" onClick="increaseAmount4();" id="boost-4">
+                DpC +250 | cost: 5000 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-click-button-5" class="boostclick-5">
+              <button type="button" onClick="increaseAmount5();" id="boost-5">
+                DpC +1000 | cost: 25000 ducks
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="AutoClick-Buttons">
+      <div class="autoboost-buttons">
+        <div class="autohead">
+          <h4>
+            AutoPet Boosts
+          </h4>
+        </div>
+        <ul>
+          <li>
+            <div id="boost-auto-button-1" class="boostauto-1">
+              <button type="button" onClick="increaseAuto1();" id="auto-1">
+                DpS +1 | cost: 20 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-auto-button-2" class="boostauto-2">
+              <button type="button" onClick="increaseAuto2();" id="auto-2">
+                DpS +5 | cost: 100 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-auto-button-3" class="boostauto-3">
+              <button type="button" onClick="increaseAuto3();" id="auto-3">
+                DpS +25 | cost: 1000 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-auto-button-4" class="boostauto-4">
+              <button type="button" onClick="increaseAuto4();" id="auto-4">
+                DpS +250 | cost: 5000 ducks
+              </button>
+            </div>
+          </li>
+          <li>
+            <div id="boost-auto-button-5" class="boostauto-5">
+              <button type="button" onClick="increaseAuto5();" id="auto-5">
+                DpS +1000 | cost: 50000 ducks
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
