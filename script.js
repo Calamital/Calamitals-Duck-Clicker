@@ -42,12 +42,10 @@ if (document.getElementById("boost-auto-button-5").className == "boostauto-5") {
   var buttona5clickboost = 1000;
   var buttona5clickcost = 50000;
 }
-updateClickCount();
-end();
 function updateClickCount() {
   document.getElementById("clickcount").innerHTML = "Ducks: " + clicks + ", DpS: " + cpsamount + ", DpC: " + amount;
 }
-
+updateClickCount();
 function updateBoostText() {
   if (document.getElementById("boost-click-button-1").className == "boostclick-1") {
     document.getElementById("boost-1").childNodes[0].nodeValue = "DpC +1 | cost: " + button1clickcost + " ducks";
@@ -233,6 +231,7 @@ function end() {
   updateClickCount();
   updateBoostText();
 }
+end();
 
 setInterval(function cpsupdate() {
   clicks += cpsamount;
