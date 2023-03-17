@@ -43,16 +43,64 @@ if (document.getElementById("boost-auto-button-5").className == "boostauto-5") {
   var buttona5clickboost = 1000;
   var buttona5clickcost = 50000;
 }
+function end() {
+  clicks = 0;
+  amount = 1;
+  cpsamount = 0;
+  auto = false;
+  if (document.getElementById("boost-click-button-1").className == "boostclick-1") {
+    button1clickboost = 1;
+    button1clickcost = 5;
+  }
+  if (document.getElementById("boost-click-button-2").className == "boostclick-2") {
+    button2clickboost = 5;
+    button2clickcost = 25;
+  }
+  if (document.getElementById("boost-click-button-3").className == "boostclick-3") {
+    button3clickboost = 25;
+    button3clickcost = 150;
+  }
+  if (document.getElementById("boost-click-button-4").className == "boostclick-4") {
+    button4clickboost = 250;
+    button4clickcost = 15000;
+  }
+  if (document.getElementById("boost-click-button-5").className == "boostclick-5") {
+    button5clickboost = 2500;
+    button5clickcost = 250000;
+  }
+  if (document.getElementById("boost-auto-button-1").className == "boostauto-1") {
+    buttona1clickboost = 1;
+    buttona1clickcost = 250;
+  }
+  if (document.getElementById("boost-auto-button-2").className == "boostauto-2") {
+    buttona2clickboost = 5;
+    buttona2clickcost = 1500;
+  }
+  if (document.getElementById("boost-auto-button-3").className == "boostauto-3") {
+    buttona3clickboost = 25;
+    buttona3clickcost = 10000;
+  }
+  if (document.getElementById("boost-auto-button-4").className == "boostauto-4") {
+    buttona4clickboost = 250;
+    buttona4clickcost = 500000;
+  }
+  if (document.getElementById("boost-auto-button-5").className == "boostauto-5") {
+    buttona5clickboost = 12500;
+    buttona5clickcost = 20000000;
+  }
+  updateClickCount();
+  updateBoostText();
+}
 function updateClickCount() {
   document.getElementById("clickcount").innerHTML = "Ducks: " + clicks + ", DpS: " + cpsamount + ", DpC: " + amount;
   if (clickcount == 0) {
     end();
+    clickcount += 1;
     setInterval(function cpsupdate() {
     clicks += cpsamount;
     updateClickCount();
   }, 1000);
   };
-  clickcount += 1;
 }
 updateClickCount();
 function updateBoostText() {
@@ -191,53 +239,4 @@ function increaseAuto5() {
     updateClickCount();
     auto = true;
   }
-}
-
-function end() {
-  clicks = 0;
-  amount = 1;
-  cpsamount = 0;
-  auto = false;
-  if (document.getElementById("boost-click-button-1").className == "boostclick-1") {
-    button1clickboost = 1;
-    button1clickcost = 5;
-  }
-  if (document.getElementById("boost-click-button-2").className == "boostclick-2") {
-    button2clickboost = 5;
-    button2clickcost = 25;
-  }
-  if (document.getElementById("boost-click-button-3").className == "boostclick-3") {
-    button3clickboost = 25;
-    button3clickcost = 150;
-  }
-  if (document.getElementById("boost-click-button-4").className == "boostclick-4") {
-    button4clickboost = 250;
-    button4clickcost = 15000;
-  }
-  if (document.getElementById("boost-click-button-5").className == "boostclick-5") {
-    button5clickboost = 2500;
-    button5clickcost = 250000;
-  }
-  if (document.getElementById("boost-auto-button-1").className == "boostauto-1") {
-    buttona1clickboost = 1;
-    buttona1clickcost = 250;
-  }
-  if (document.getElementById("boost-auto-button-2").className == "boostauto-2") {
-    buttona2clickboost = 5;
-    buttona2clickcost = 1500;
-  }
-  if (document.getElementById("boost-auto-button-3").className == "boostauto-3") {
-    buttona3clickboost = 25;
-    buttona3clickcost = 10000;
-  }
-  if (document.getElementById("boost-auto-button-4").className == "boostauto-4") {
-    buttona4clickboost = 250;
-    buttona4clickcost = 500000;
-  }
-  if (document.getElementById("boost-auto-button-5").className == "boostauto-5") {
-    buttona5clickboost = 12500;
-    buttona5clickcost = 20000000;
-  }
-  updateClickCount();
-  updateBoostText();
 }
