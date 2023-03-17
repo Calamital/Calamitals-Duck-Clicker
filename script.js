@@ -78,6 +78,7 @@ function updateBoostText() {
     document.getElementById("auto-5").childNodes[0].nodeValue = "DpS +1000 | cost: " + buttona5clickcost + " ducks ";
   }
 }
+updateBoostText();
 function increaseAmount1() {
   if (clicks >= button1clickcost) {
     clicks -= button1clickcost;
@@ -231,9 +232,8 @@ function end() {
   updateClickCount();
   updateBoostText();
 }
-end();
 
 setInterval(function cpsupdate() {
   clicks += cpsamount;
   updateClickCount();
-}, 1000);
+}, 1000);end();
