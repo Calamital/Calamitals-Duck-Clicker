@@ -2,6 +2,7 @@ var clicks = 0;
 var amount = 1;
 var cpsamount = 0;
 var auto = false;
+var clickcount = 0;
 if (document.getElementById("boost-click-button-1").className == "boostclick-1") {
   var button1clickboost = 1;
   var button1clickcost = 5;
@@ -44,6 +45,10 @@ if (document.getElementById("boost-auto-button-5").className == "boostauto-5") {
 }
 function updateClickCount() {
   document.getElementById("clickcount").innerHTML = "Ducks: " + clicks + ", DpS: " + cpsamount + ", DpC: " + amount;
+  if (clickcount == 0) {
+    end();
+  };
+  clickcount++;
 }
 updateClickCount();
 function updateBoostText() {
