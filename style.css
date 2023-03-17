@@ -17,7 +17,7 @@ img:hover {
 hr {
   border: 1px solid #555555;
   opacity: 0.5;
-  margin: 25px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
 }
 
 .click-button {
@@ -25,7 +25,9 @@ hr {
   height: 50px;
   border: 0px;
 }
-
+.end-button {
+  text-align: center;
+}
 h3 {
   text-align: center;
   font-weight: normal;
