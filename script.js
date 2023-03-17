@@ -52,7 +52,7 @@ function updateClickCount() {
     updateClickCount();
   }, 1000);
   };
-  clickcount++;
+  clickcount += 1;
 }
 updateClickCount();
 function updateBoostText() {
