@@ -4,19 +4,13 @@
 </header>
 
 <body>
-  <h6>
-    *DpC: Ducks per click<br>*DpS: Ducks per second
-  </h6>
-  <button class="end-button" onclick="end();">
-    Restart Game
-  </button>
   <h3>
     Calamital's Duck Clicker
   </h3>
   <div class="hr2">
     <hr>
   </div>
-  <p id="clickcount"></p>
+  <p id="clickcount">Clicks: 0, DpS: 0, DpC: 1</p>
   <div class="click-button">
     <button type="button" onClick="clicks+=amount;updateClickCount();" id="push">
       <img src="https://tr.rbxcdn.com/98a3cce71aa355750a8a00c4f3b90fd7/420/420/Decal/Png" />
@@ -119,4 +113,10 @@
       </div>
     </div>
   </div>
+  <h6>
+    *DpC: Ducks per click<br>*DpS: Ducks per second
+  </h6>
+  <button class="end-button" onclick="end();">
+    Restart Game
+  </button>
 </body>
