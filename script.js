@@ -92,8 +92,7 @@ function end() {
   updateBoostText();
 }
 function updateClickCount() {
-  document.getElementById("clickcount").innerHTML = "Ducks: " + clicks + ", DpS: " + cpsamount + ", DpC: " + amount;
-  if (clickcount == 0) {
+   if (clickcount == 0) {
     end();
     clickcount += 1;
     setInterval(function cpsupdate() {
@@ -101,6 +100,7 @@ function updateClickCount() {
     updateClickCount();
   }, 1000);
   };
+  document.getElementById("clickcount").innerHTML = "Ducks: " + clicks + ", DpS: " + cpsamount + ", DpC: " + amount;
 }
 updateClickCount();
 function updateBoostText() {
